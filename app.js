@@ -9,7 +9,7 @@ const express = require('express')
 const app = express()
 
 //公开指定目录
-app.use('/public/',express.static('./public/'))
+app.use(express.static('public'))
 
 //当服务器收到get/请求的时候，执行回调处理函数
 
